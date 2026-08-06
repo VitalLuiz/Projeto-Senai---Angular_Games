@@ -1,0 +1,14 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.toolbar-bgcolor{
+  background: #3E50B5;
+}
+span{
+  color: white;
+  padding: 8px;
+  font-size: 0.9em;
+}
+img{
+  height: 30px;
+}
