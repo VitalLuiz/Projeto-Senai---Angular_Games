@@ -12,3 +12,7 @@ span{
 img{
   height: 30px;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
