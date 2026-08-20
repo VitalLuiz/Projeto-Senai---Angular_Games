@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Produto } from '../../models/Produto.model';
 
 @Component({
   selector: 'app-lista-produto',
@@ -6,4 +7,8 @@ import { Component } from '@angular/core';
   templateUrl: './lista-produto.html',
   styleUrl: './lista-produto.css',
 })
-export class ListaProduto {}
+export class ListaProduto {
+
+  private Produtos: Produto[] = [];
+
+}

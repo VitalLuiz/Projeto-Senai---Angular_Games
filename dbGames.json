@@ -4,28 +4,28 @@
       "id": "1",
       "produto": "Jogo 1",
       "descricao": "Descrição do Jogo 1",
-      "foto": "jogo1.jpg",
+      "foto": "imagem_controle.jpg",
       "preco": 80
     },
     {
       "id": "2",
       "produto": "Jogo 2",
       "descricao": "Descrição do Jogo 2",
-      "foto": "jogo2.jpg",
+      "foto": "imagem-games.avif",
       "preco": 60
     },
     {
       "id": "3",
       "produto": "Jogo 3",
       "descricao": "Descrição do Jogo 3",
-      "foto": "jogo3.jpg",
+      "foto": "imagem-nave.jpg",
       "preco": 30
     },
     {
       "id": "4",
       "produto": "Jogo 4",
       "descricao": "Descrição do Jogo 4",
-      "foto": "jogo4.jpg",
+      "foto": "banner.jpg",
       "preco": 40
     }
   ],

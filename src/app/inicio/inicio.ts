@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnInit, Pipe } from '@angular/core';
 import { MatButtonModule } from  '@angular/material/button' ;
 import { MatCardModule } from  '@angular/material/card' ;
 import {MatGridListModule} from '@angular/material/grid-list';
@@ -16,6 +16,20 @@ export class Inicio implements OnInit {
   private produtoService = inject(produto)
 
   ngOnInit(): void {
-    this.produtoService.getProdutos().subscribe()
+    this.produtoService.getProdutos().subscribe(
+      retornarProduto => {
+        this.produtos = retornarProduto.map(
+          item => {
+            return new Produto(
+              item.id,
+              item.produto,
+              item.descricao,
+              item.foto,
+              item.preco
+            );
+          }
+        )
+      }
+    )
   }
 }
