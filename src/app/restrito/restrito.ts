@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { menu-produtos } from "";
-import { RouterOutlet } from "../../../node_modules/@angular/router/types/_router_module-chunk";
-import { MenuProduto } from "./menu-produto/menu-produto"; } from "module";
+import { RouterOutlet } from '@angular/router';
+import { MenuProduto } from './menu-produto/menu-produto';
 
 @Component({
   selector: 'app-restrito',
