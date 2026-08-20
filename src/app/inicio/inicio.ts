@@ -16,20 +16,23 @@ export class Inicio implements OnInit {
   private produtoService = inject(produto)
 
   ngOnInit(): void {
-    this.produtoService.getProdutos().subscribe(
-      retornarProduto => {
-        this.produtos = retornarProduto.map(
-          item => {
-            return new Produto(
-              item.id,
-              item.produto,
-              item.descricao,
-              item.foto,
-              item.preco
-            );
-          }
-        )
-      }
-    )
+    this.listarProdutos()
   }
+  listarProdutos(){
+    this.produtoService.getProdutos().subscribe(
+          retornarProduto => {
+            this.produtos = retornarProduto.map(
+              item => {
+                return new Produto(
+                  item.id,
+                  item.produto,
+                  item.descricao,
+                  item.foto,
+                  item.preco
+              );
+            }
+          )
+        }
+      )
+    }
 }
